@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add reviewers and labels
-      - uses: label-when-approved-action
+        uses: label-when-approved-action
         env:
           APPROVALS: 1
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
